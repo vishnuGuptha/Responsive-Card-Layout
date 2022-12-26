@@ -146,33 +146,53 @@ const MainPage = () => {
     <div className="px-5 lg:pl-5 lg:px-0 flex flex-col w-full gap-y-2 sm:gap-5 md:gap-0 my-2 sm:flex-row pb-16 sm:fixed">
       <>{console.log(datas)}</>
       <div className="flex flex-col sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-        <div className="font-bold max-w-full text-left flex items-center pb-2">
+        <div className="font-bold max-w-full text-left flex items-center pb-2 lg:text-lg">
           Fixed Cards Column
         </div>
-        <div className="sm:scrollbar-hide sm:overflow-scroll sm:h-[calc(100vh-49px-40px-40px-10px)]">
+        <div className="sm:scrollbar-hide sm:overflow-scroll sm:h-[calc(100vh-49px-40px-40px-10px)] lg:h-[calc(100vh-70px-8px-36px-8px-46px)]">
           <div className="flex flex-col max-w-full gap-y-2 sm:gap-5 md:pr-[12px] lg:pr-[20px]">
             <Card type={"FixedCard"} />
             <Card type={"FixedCard"} />
           </div>
         </div>
       </div>
-      <div className="sm:w-1/2 md:w-2/3 sm:mt-8 lg:w-3/4 md:pl-[7px] lg:pl-[0px] xl:w-4/5 sm:h-[calc(100vh-49px-40px-40px-10px)] sm:scrollbar-hide sm:overflow-scroll">
-        <div className="flex gap-y-2 flex-col md:flex-row md:flex-wrap sm:gap-5 lg:justify-start">
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
-          <Card type={"DynamicCard"} />
+      <div className="sm:w-1/2 md:w-2/3 lg:w-3/4 md:pl-[7px] lg:pl-[0px] xl:w-4/5 ">
+        <div className="lg:text-lg font-bold max-w-full text-left flex items-center pb-2">
+          Dynamic Cards Column
+        </div>
+        <div className="sm:h-[calc(100vh-49px-40px-40px-10px)] lg:sm:h-[calc(100vh-70px-8px-36px-8px-47px)] sm:scrollbar-hide sm:overflow-scroll">
+          <div className="flex gap-y-2 flex-col md:flex-row md:flex-wrap sm:gap-5 lg:justify-start">
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+            <Card type={"DynamicCard"} />
+          </div>
         </div>
       </div>
     </div>

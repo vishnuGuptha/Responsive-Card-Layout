@@ -10,7 +10,7 @@ const FixedCard = () => {
         <div className="flex-1 flex justify-center items-center">
           <div>Content / Graph</div>
         </div>
-        <div className="bg-neutral-700 rounded-b-lg w-full h-10 flex items-center justify-end pr-5 text-white">
+        <div className="bg-neutral-700 rounded-b-lg w-full h-10 flex items-center justify-end pr-5 text-zinc-200">
           Footer
         </div>
       </div>
