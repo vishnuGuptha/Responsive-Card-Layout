@@ -1,7 +1,7 @@
 import Card from "Component/Card";
 import React, { useEffect, useState } from "react";
 
-interface IData {
+export interface IData {
   location: {
     name: string;
     region: string;
@@ -161,38 +161,59 @@ const MainPage = () => {
           <div className="lg:text-lg font-bold max-w-full text-left flex items-center pb-2">
             Dynamic Cards Column
           </div>
-          <div className="sm:h-[calc(100vh-49px-40px-40px-10px)] lg:sm:h-[calc(100vh-70px-8px-36px-8px-47px)] sm:scrollbar-hide sm:overflow-scroll">
+          <div className="sm:h-[calc(100vh-49px-40px-40px-10px)] lg:sm:h-[calc(100vh-70px-8px-36px-8px-47px)] sm:scrollbar-hide sm:overflow-scroll z-10">
             <div className="flex gap-y-2 flex-col md:flex-row md:flex-wrap sm:gap-5 lg:justify-start">
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
-              <Card type={"DynamicCard"} />
+              <Card
+                type={"DynamicCard"}
+                title={"Feels Like"}
+                Value={datas.current.condition.text}
+                icon={datas.current.condition.icon}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Temperature"}
+                Value={datas.current.temp_c + "°C"}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Humidity"}
+                Value={datas.current.humidity + "%"}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Pressure"}
+                Value={datas.current.pressure_in + "P"}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Wind Degree"}
+                Value={datas.current.wind_degree}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Wind Speed"}
+                Value={datas.current.wind_kph + " kph"}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Wind Direction"}
+                Value={datas.current.wind_dir}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"isDay"}
+                Value={datas.current.is_day}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"Gust"}
+                Value={datas.current.gust_kph}
+              />
+              <Card
+                type={"DynamicCard"}
+                title={"UV"}
+                Value={datas.current.uv}
+              />
             </div>
           </div>
         </div>
