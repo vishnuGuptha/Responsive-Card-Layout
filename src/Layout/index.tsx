@@ -1,14 +1,16 @@
+import Version2 from "Component/Version2";
 import React from "react";
-import { Footer, Header, MainPage } from "../Pages";
+// import { Footer, Header, MainPage } from "../Pages";
 
 const Layout = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <div className="max-w-[4000px] mx-auto">
         <MainPage />
       </div>
-      <Footer />
+      <Footer /> */}
+      <Version2 />
     </>
   );
 };
